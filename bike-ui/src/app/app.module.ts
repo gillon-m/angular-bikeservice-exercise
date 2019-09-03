@@ -15,7 +15,7 @@ import { ViewRegistrationComponent } from './components/view-registration/view-r
     AppComponent,
     AdminComponent,
     HomeComponent,
-    // ViewRegistrationComponent
+    ViewRegistrationComponent
   ],
   imports: [
     BrowserModule,
