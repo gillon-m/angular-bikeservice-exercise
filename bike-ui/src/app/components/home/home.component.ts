@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BikeService } from 'src/app/services/bike.service';
 import {FormGroup, FormControl, Validator, Validators } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { throwError } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
           return true;
         },
         error => {
-          return Observable.throw(error);
+          return throwError(error);
         }
       )
     } else{
